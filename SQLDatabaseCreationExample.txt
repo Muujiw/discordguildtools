@@ -1,0 +1,36 @@
+CREATE DATABASE 'discord';
+USE 'discord';
+
+CREATE TABLE `discords` (
+  `id` int(11) NOT NULL,
+  `discord_id` bigint(20) DEFAULT NULL,
+  `access_token` text NOT NULL,
+  `date` timestamp NOT NULL DEFAULT current_timestamp(),
+  `joined` tinyint(4) NOT NULL DEFAULT 0,
+  `refresh_token` text DEFAULT NULL,
+  `hak` text DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+
+
+--
+-- Index for dumped tables
+--
+ALTER TABLE `discords`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT pour les tables déchargées
+--
+
+--
+-- AUTO_INCREMENT pour la table `discords`
+--
+ALTER TABLE `discords`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=301;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
