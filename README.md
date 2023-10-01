@@ -1,4 +1,4 @@
-# Discord API Tools
+# Discord Guild API Tools
 
 A collection of seven scripts to aid in Discord API interactions, necessitating a solid understanding of databases (SQL), Python, and APIs at large. These scripts encompass examples and utilities for database interactions, managing Discord guilds, and handling Discord OAuth2 authentication. Through these scripts, you can automate various tasks like refreshing OAuth tokens, managing member data, sending Direct Messages (DMs), and more, leveraging the power of Discord's robust API alongside a structured database setup.
 
